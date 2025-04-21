@@ -1,9 +1,9 @@
 ---
-title: "**Vaccination Impact: A Global Health & Economic Perspective**"
-author: " **Sanket Salke DCU ID: 12977**"
+title: "Vaccination Impact: A Global Health & Economic Perspective"
+author: "Sanket Salke (DCU ID: 12977)"
 format:
   html:
-    theme: Times New Roman(bold)
+    theme: journal
     toc: true
     toc-depth: 2
     embed-resources: true
@@ -11,6 +11,7 @@ format:
 editor:
   chunk-output: console
 ---
+
 
 ## **Introduction**
 
@@ -128,4 +129,23 @@ These countries achieved the fastest increase in RCV1 coverage between their fir
 
 
 
+
 [^1]: Here, “vaccination coverage” refers to the first‑dose Rubella‑containing vaccine (RCV1).
+=======
+title: "Vaccination Impact: A Global Health & Economic Perspective"
+author: "Your Name (UNICEF Data Analyst)"
+format:
+  html:
+    embed-resources: true
+    code-fold: true
+    theme: minty
+---
+
+## 🌍 Introduction
+
+> Despite remarkable progress in global vaccination coverage, millions remain vulnerable—highlighting persistent disparities in healthcare access and economic development.
+
+From 2000 to 2023:
+- Global vaccination coverage rose from **65% to 85%**
+- Life expectancy increased from **68 to 76 years**
+>>>>>>> f0e8aeb7eb4a8ebc2c4e34a5662a2d268f223cd4
