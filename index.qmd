@@ -26,14 +26,17 @@ This report explores global **vaccination coverage[^1]** This report explores th
 
 Between 2000 and 2023, global vaccination coverage[^1] climbed from 65% to 85%, mirroring life expectancy gains.
 
+**"On avg. close to 85% of the global population was immunized as of 2022"**
+
 **STEADY INCREASE IN VACCINATION COVERAGE OVER THE YEARS, 
 PARALLELED BY A RISE IN LIFE EXPECTANCY**
 <div style="margin:1em 0">
-  <iframe src="time_series.html" width="100%" height="500" frameBorder="1"></iframe>
-</div> **"On avg. close to 85% of the global population was immunized as of 2022"**
+  <iframe src="time_series.html" width="100%" height="500" frameBorder="10"></iframe>
+</div> 
+**Pandemic Impact (2020–2021)**
+During 2020 and 2021, both vaccination coverage and life expectancy experienced a noticeable dip, coverage fell from roughly 85% down to 82%, while life expectancy dipped by 0.5 years. This reversal aligns with the global COVID-19 crisis, which strained healthcare systems, disrupted routine immunization campaigns, and diverted resources toward emergency response. It highlights the vulnerability of preventive health services during major outbreaks and underscores the need for resilient delivery systems that can maintain essential vaccinations even under pandemic pressures.
 
-
-## 🌐 Global Coverage Map
+## 🌐 **Geographic Comparison of Global Vaccination Coverage**
 
 This map highlights the latest RCV1 vaccination coverage by country, revealing stark disparities—from nearly 100% in some nations to under 50% in others.
 <div style="margin: 1em 0;">
