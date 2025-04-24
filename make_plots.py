@@ -128,27 +128,44 @@ for year in years:
         ]
     ))
 
-# 3) Set the slider’s active position to the last step
-fig.update_layout(
-    sliders=[dict(
-        active=len(steps)-1,    # move slider handle to the last year
-        pad={"t":50},
-        steps=steps
-    )]
+#3 ─── Scatter: GDP vs. Vaccination Coverage with Full 1980–2023 Slider ───
+import plotly.express as px
+
+# 1) Define the full slider range
+years = list(range(1980, 2024))   # 1980 through 2023
+
+# 2) Build the animated scatter
+fig3 = px.scatter(
+    df,
+    x="GDP per capita (constant 2015 US$)",
+    y="obs_value",
+    animation_frame="time_period",
+    animation_group="alpha_3_code",
+    color="continent",
+    hover_name="alpha_3_code",
+    labels={
+        "obs_value": "Coverage (%)",
+        "GDP per capita (constant 2015 US$)": "GDP per Capita (2015 US$)"
+    },
+    title="GDP per Capita vs. Vaccination Coverage (1980–2023)",
+    category_orders={"time_period": years}
 )
 
-fig.write_html("map.html", include_plotlyjs="cdn")
-print("✓ map.html with continent dropdown & year slider generated")
+# 3) Tidy up layout
+fig3.update_layout(
+    legend_title_text="Continent"
+)
 
+# 4) Default the slider handle to the last year (2023)
+if fig3.layout.sliders:
+    fig3.layout.sliders[0].active = len(years) - 1
 
-
-# 3) Scatter + Regression HTML
-fig3 = px.scatter(df, x="GDP per capita (constant 2015 US$)", y="obs_value",
-                  trendline="ols",
-                  labels={"obs_value":"Coverage (%)"},
-                  title="GDP per Capita vs. Vaccination Coverage")
+# 5) Write out the updated HTML
 fig3.write_html("scatter.html", include_plotlyjs="cdn")
-print("✓ scatter.html generated")
+print("✓ scatter.html (1980–2023 slider) generated")
+
+
+
 
 # 4) Bar Chart HTML (Top 10 Growth Rates)
 # Compute growth rate per country between first and last year
